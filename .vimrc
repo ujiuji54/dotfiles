@@ -1,3 +1,5 @@
+filetype plugin indent on
+
 set encoding=utf-8
 set number
 
@@ -6,7 +8,9 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 set smartindent
-filetype plugin indent on
+
+set ignorecase
+set smartcase
 
 set noundofile
 set nobackup
