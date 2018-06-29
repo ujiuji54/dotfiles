@@ -1,6 +1,7 @@
 filetype plugin indent on
 
 set encoding=utf-8
+set fileformat=unix
 set number
 
 set expandtab
