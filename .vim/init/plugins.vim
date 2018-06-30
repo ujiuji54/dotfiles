@@ -19,7 +19,8 @@ call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/neosnippet')
 call dein#add('Shougo/vimproc.vim')
-call dein#add('tpope/vim-endwise')
+
+call dein#add('tpope/vim-endwise') "rubyのend補完
 
 call dein#end()
 
