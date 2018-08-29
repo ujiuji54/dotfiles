@@ -2,6 +2,7 @@ runtime! init/*.vim
 filetype plugin indent on
 
 set encoding=utf-8
+scriptencoding utf-8
 set fileformat=unix
 set number
 
@@ -13,6 +14,8 @@ set smartindent
 
 set ignorecase
 set smartcase
+
+set wildmenu
 
 set noundofile
 set nobackup
