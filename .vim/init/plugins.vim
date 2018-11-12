@@ -1,11 +1,12 @@
 if &compatible
     set nocompatible
 endif
+let g:dein#types#git#default_protocol = "ssh"
 
 let s:dein_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vim')
 if &runtimepath !~# 'dein.vim'
     if !isdirectory(s:dein_dir)
-        execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
+        execute '!git clone git@github.com:Shougo/dein.vim.git' s:dein_dir
     endif
     execute 'set runtimepath^=' . s:dein_dir
 endif
