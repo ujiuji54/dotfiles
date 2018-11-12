@@ -19,7 +19,7 @@ call dein#add('Shougo/dein.vim') "dein本体
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/vimproc.vim')
 
-call dein#add('scrooloose/nerdtree')
+call dein#add('scrooloose/nerdtree') "ファイルツリー
 call dein#add('mattn/emmet-vim') "HTML，CSS用ツール
 call dein#add('tpope/vim-endwise') "rubyのend補完
 
