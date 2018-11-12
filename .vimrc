@@ -1,4 +1,6 @@
 runtime! init/*.vim
+runtime! filetype/*.vim
+runtime! mapping/*.vim
 filetype plugin indent on
 
 set encoding=utf-8

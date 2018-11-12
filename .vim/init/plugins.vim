@@ -14,11 +14,12 @@ endif
 "set runtimepath+=~/dotfiles/.vim/dein/repos/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.cache/.vim/dein'))
 
-call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/dein.vim') "dein本体
 
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/vimproc.vim')
 
+call dein#add('scrooloose/nerdtree')
 call dein#add('mattn/emmet-vim') "HTML，CSS用ツール
 call dein#add('tpope/vim-endwise') "rubyのend補完
 
