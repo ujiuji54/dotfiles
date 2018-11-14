@@ -1,6 +1,7 @@
 runtime! init/*.vim
 runtime! filetype/*.vim
 runtime! mapping/*.vim
+runtime! plugsettings/*.vim
 filetype plugin indent on
 
 set encoding=utf-8
@@ -21,3 +22,5 @@ set wildmenu
 
 set noundofile
 set nobackup
+
+autocmd BufWritePre * :%s/\s\+$//ge

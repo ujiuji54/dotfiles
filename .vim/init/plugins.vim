@@ -24,6 +24,7 @@ call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/vimproc.vim')
 
 call dein#add('scrooloose/nerdtree') "ファイルツリー
+call dein#add('ctrlpvim/ctrlp.vim') "ファイル検索
 call dein#add('mattn/emmet-vim') "HTML，CSS用ツール
 call dein#add('tpope/vim-endwise') "rubyのend補完
 
