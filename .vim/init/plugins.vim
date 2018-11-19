@@ -20,9 +20,12 @@ call dein#begin(expand('~/.cache/.vim/dein'))
 
 call dein#add('Shougo/dein.vim') "dein本体
 
+call dein#add('Shougo/neosnippet-snippets')
+call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/vimproc.vim')
 
+call dein#add('Shougo/unite.vim')
 call dein#add('scrooloose/nerdtree') "ファイルツリー
 call dein#add('ctrlpvim/ctrlp.vim') "ファイル検索
 call dein#add('mattn/emmet-vim') "HTML，CSS用ツール
