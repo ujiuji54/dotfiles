@@ -7,6 +7,7 @@ filetype plugin indent on
 set encoding=utf-8
 scriptencoding utf-8
 set fileformat=unix
+setlocal ff=unix
 set number
 
 set expandtab
@@ -23,4 +24,6 @@ set wildmenu
 set noundofile
 set nobackup
 
-autocmd BufWritePre * :%s/\s\+$//ge
+augroup save
+  autocmd BufWritePre * :%s/\s\+$//ge
+augroup END
