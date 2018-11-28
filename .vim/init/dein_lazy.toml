@@ -8,9 +8,17 @@ repo = 'Shougo/neocomplete.vim' #補完
 on-i = 1
 
 [[plugins]]
-repo = 'Shougo/neomru.vim'
-on_path = '.*'
+repo = 'Shougo/neosnippet.vim'
+depends = ['neosnippet-snippets', 'context_filetype.vim']
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
-on_source = ['neocomplete.vim']
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'

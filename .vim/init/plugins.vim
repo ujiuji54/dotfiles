@@ -5,14 +5,11 @@ endif
 let s:dein_dir = expand('~/.cache/.vim/dein')
 let s:dein_repo_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vim')
 
+"let g:dein#types#git#default_protocol = "ssh"
 if &runtimepath !~# 'dein.vim'
     if !isdirectory(s:dein_repo_dir)
-        try
-            execute '!git clone git@github.com:Shougo/dein.vim.git' s:dein_repo_dir
-        catch
-            execute '!git clone https://github.com/Shougo/dein.vim.git' s:dein_repo_dir
-            let g:dein#types#git#default_protocol = "ssh"
-        endtry
+        execute '!git clone https://github.com/Shougo/dein.vim.git' s:dein_repo_dir
+        "execute '!git clone git@github.com:Shougo/dein.vim.git' s:dein_repo_dir
     endif
     execute 'set runtimepath^=' . s:dein_repo_dir
 endif
