@@ -1,7 +1,3 @@
-[[plugins]]
-repo = 'tpope/vim-endwise'
-on_ft = ['ruby']
-
 #インサートモードに入ったら読み込む
 [[plugins]]
 repo = 'Shougo/neocomplete.vim' #補完
@@ -22,3 +18,22 @@ repo = 'Shougo/context_filetype.vim'
 [[plugins]]
 repo = 'Shougo/neomru.vim'
 on_path = '.*'
+
+#-ruby-----
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']
+
+#rubocop
+[[plugins]]
+repo = 'scrooloose/syntastic'
+on_ft = ['ruby']
+hook_post_update = '''
+  let g:syntastic_mode_map = { 'mode': 'passive',
+            \ 'active_filetypes': ['ruby'] }
+  let g:syntastic_ruby_checkers = ['rubocop']
+'''
