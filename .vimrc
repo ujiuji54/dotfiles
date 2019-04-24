@@ -13,11 +13,13 @@ set number
 set clipboard+=unnamed
 
 set expandtab
+set smarttab
 set tabstop=2
 set shiftwidth=2
 set autoindent
 set smartindent
-syntax on
+set hlsearch
+syntax enable
 colorscheme molokai
 
 set ignorecase
@@ -25,6 +27,7 @@ set smartcase
 
 set wildmenu
 
+set noswapfile
 set noundofile
 set nobackup
 

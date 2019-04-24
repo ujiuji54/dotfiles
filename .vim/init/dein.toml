@@ -23,4 +23,7 @@ repo = 'Shougo/unite.vim' #バッファ等管理
 repo = 'scrooloose/nerdtree' #ファイルツリー
 
 [[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
 repo = 'mattn/emmet-vim'
