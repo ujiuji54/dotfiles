@@ -19,6 +19,11 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'Shougo/neomru.vim'
 on_path = '.*'
 
+#-python---
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = ['python']
+
 #-ruby-----
 [[plugins]]
 repo = 'tpope/vim-endwise'

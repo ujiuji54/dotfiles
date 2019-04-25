@@ -1,5 +1,3 @@
-let g:neosnippet#snippets_directory = "$HOME/.vim/snippets/"
-
 " Vim起動時にneocompleteを有効にする
 let g:neocomplete#enable_at_startup = 1
 
