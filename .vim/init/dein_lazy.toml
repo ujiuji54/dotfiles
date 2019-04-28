@@ -46,3 +46,7 @@ hook_post_update = '''
             \ 'active_filetypes': ['ruby'] }
   let g:syntastic_ruby_checkers = ['rubocop']
 '''
+
+#-vue-----
+repo = 'posva/vim-vue'
+on_ft = ['vue']
