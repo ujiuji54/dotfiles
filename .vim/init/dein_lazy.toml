@@ -8,12 +8,13 @@ on-i = 1
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
-depends = ['neosnippet-snippets', 'context_filetype.vim']
+depends = ['context_filetype.vim']
 on_event = 'InsertCharPre'
 on_ft = 'snippet'
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+depends = ['neosnippet']
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
@@ -37,15 +38,6 @@ on_ft = ['ruby']
 [[plugins]]
 repo = 'slim-template/vim-slim'
 on_ft = ['slim']
-
-[[plugins]]
-repo = 'scrooloose/syntastic'
-on_ft = ['ruby']
-hook_post_update = '''
-  let g:syntastic_mode_map = { 'mode': 'passive',
-            \ 'active_filetypes': ['ruby'] }
-  let g:syntastic_ruby_checkers = ['rubocop']
-'''
 
 repo = 'posva/vim-vue'
 on_ft = ['vue']

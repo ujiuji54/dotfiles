@@ -23,10 +23,19 @@ repo = 'roxma/nvim-yarp'
 repo = 'roxma/vim-hug-neovim-rpc'
 
 [[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
 repo = 'scrooloose/nerdtree' #ファイルツリー
 
 [[plugins]]
 repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
+repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
