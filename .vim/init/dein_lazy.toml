@@ -1,4 +1,7 @@
-#インサートモードに入ったら読み込む
+[[plugins]]
+repo = 'Shougo/denite.nvim' #バッファ等管理
+depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
+
 [[plugins]]
 repo = 'Shougo/neocomplete.vim' #補完
 on-i = 1
@@ -19,12 +22,10 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'Shougo/neomru.vim'
 on_path = '.*'
 
-#-python---
 [[plugins]]
 repo = 'davidhalter/jedi-vim'
 on_ft = ['python']
 
-#-ruby-----
 [[plugins]]
 repo = 'tpope/vim-endwise'
 on_ft = ['ruby']
@@ -35,9 +36,8 @@ on_ft = ['ruby']
 
 [[plugins]]
 repo = 'slim-template/vim-slim'
-on_ft = ['ruby']
+on_ft = ['slim']
 
-#rubocop
 [[plugins]]
 repo = 'scrooloose/syntastic'
 on_ft = ['ruby']
@@ -47,6 +47,5 @@ hook_post_update = '''
   let g:syntastic_ruby_checkers = ['rubocop']
 '''
 
-#-vue-----
 repo = 'posva/vim-vue'
 on_ft = ['vue']
