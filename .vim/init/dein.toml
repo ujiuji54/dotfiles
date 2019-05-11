@@ -23,6 +23,9 @@ repo = 'Shougo/unite.vim' #バッファ等管理
 repo = 'scrooloose/nerdtree' #ファイルツリー
 
 [[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
 repo = 'ctrlpvim/ctrlp.vim' #ファイル検索
 
 [[plugins]]
