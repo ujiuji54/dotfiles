@@ -35,6 +35,9 @@ repo = 'scrooloose/nerdtree' #ファイルツリー
 repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
 repo = 'w0rp/ale'
 
 [[plugins]]

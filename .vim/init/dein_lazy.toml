@@ -1,20 +1,23 @@
 [[plugins]]
 repo = 'Shougo/denite.nvim' #バッファ等管理
 depends = ['nvim-yarp', 'vim-hug-neovim-rpc']
+hook_post_source = '''
+  call denite#custom#filter('matcher/ignore_globs', 'ignore_globs', ['.git', '.svn', 'node_modules'])
+'''
 
 [[plugins]]
-repo = 'Shougo/neocomplete.vim' #補完
+repo = 'Shougo/deoplete.nvim' #補完
 on-i = 1
 
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
-depends = ['context_filetype.vim']
-on_event = 'InsertCharPre'
+repo = 'Shougo/neosnippet-snippets'
 on_ft = 'snippet'
 
 [[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-depends = ['neosnippet']
+repo = 'Shougo/neosnippet.vim'
+depends = ['context_filetype.vim', 'neosnippet-snippets']
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
