@@ -23,6 +23,9 @@ repo = 'roxma/nvim-yarp'
 repo = 'roxma/vim-hug-neovim-rpc'
 
 [[plugins]]
+repo = 'sheerun/vim-polyglot' # syntax highlight
+
+[[plugins]]
 repo = 'vim-airline/vim-airline'
 
 [[plugins]]
