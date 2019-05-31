@@ -41,7 +41,7 @@ repo = 'airblade/vim-gitgutter'
 repo = 'w0rp/ale'
 
 [[plugins]]
-repo = 'nathanaelkane/vim-indent-guides'
+repo = 'Yggdroot/indentLine'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
