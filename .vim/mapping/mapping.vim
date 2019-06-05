@@ -1,3 +1,7 @@
+"US keyboard
+nnoremap ; :
+nnoremap : ;
+
 "nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
