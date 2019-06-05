@@ -1,5 +1,5 @@
 if &compatible
-    set nocompatible
+  set nocompatible
 endif
 
 let s:dein_dir = expand('~/.cache/.vim/dein')
@@ -7,11 +7,10 @@ let s:dein_repo_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vi
 
 "let g:dein#types#git#default_protocol = "ssh"
 if &runtimepath !~# 'dein.vim'
-    if !isdirectory(s:dein_repo_dir)
-        execute '!git clone https://github.com/Shougo/dein.vim.git' s:dein_repo_dir
-        "execute '!git clone git@github.com:Shougo/dein.vim.git' s:dein_repo_dir
-    endif
-    execute 'set runtimepath^=' . s:dein_repo_dir
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim.git' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . s:dein_repo_dir
 endif
 
 " 設定開始
@@ -34,5 +33,5 @@ if dein#load_state(s:dein_dir)
 endif
 
 if dein#check_install()
-    call dein#install()
+  call dein#install()
 endif
