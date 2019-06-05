@@ -1,0 +1,40 @@
+[[plugins]]
+repo = 'Shougo/deoplete.nvim' #補完
+on-i = 1
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+on_ft = 'snippet'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+depends = ['context_filetype.vim', 'neosnippet-snippets']
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = ['python']
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+on_ft = ['slim']
+
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = ['vue']
