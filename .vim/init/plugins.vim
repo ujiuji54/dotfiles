@@ -2,8 +2,14 @@ if &compatible
   set nocompatible
 endif
 
-let s:dein_dir = expand('~/.cache/.vim/dein')
-let s:dein_repo_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vim')
+if has('nvim')
+  let s:dein_dir = expand('~/.cache/.nvim/dein')
+  let s:dein_repo_dir = expand('~/.cache/.nvim/dein/repos/github.com/Shougo/dein.vim')
+else
+  let s:dein_dir = expand('~/.cache/.vim/dein')
+  let s:dein_repo_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vim')
+end
+
 
 "let g:dein#types#git#default_protocol = "ssh"
 if &runtimepath !~# 'dein.vim'

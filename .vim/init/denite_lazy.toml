@@ -6,7 +6,6 @@ hook_post_source = '''
   let g:unite_source_history_yank_enable=1
   let g:unite_source_file_mru_limit = 200
 
-  call denite#custom#var('file/rec', 'command', ['ag', '--follow', '--nocolor', '--nogroup', '-g', '', '--hidden'])
   call denite#custom#var('grep', 'command', ['ag'])
   call denite#custom#var('grep', 'recursive_opts', [])
   call denite#custom#var('grep', 'pattern_opt', [])
@@ -21,7 +20,8 @@ hook_post_source = '''
         \ '--nocolor',
         \ '--nogroup',
         \ '-g',
-        \ ''
+        \ '',
+        \ '--hidden',
         \ ])
 
   call denite#custom#source('file/rec', 'matchers', ['matcher/substring'])
