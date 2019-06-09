@@ -25,7 +25,6 @@ if dein#load_state(s:dein_dir)
   let s:toml = [
         \ { 'name': 'default' },
         \ { 'name': 'lazy', 'lazy': 1 },
-        \ { 'name': 'denite_lazy', 'lazy': 1 },
         \ ]
 
   let s:path = {name -> $HOME . '/dotfiles/.vim/init/' . name . '.toml'}

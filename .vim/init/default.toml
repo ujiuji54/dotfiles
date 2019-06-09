@@ -50,4 +50,11 @@ repo = 'w0rp/ale'
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+[[plugins]]
 repo = 'ujiprog/git-popup-messenger'
