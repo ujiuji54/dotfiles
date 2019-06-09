@@ -48,6 +48,3 @@ repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
-
-[[plugins]]
-repo = 'mattn/emmet-vim'

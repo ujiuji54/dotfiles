@@ -2,8 +2,14 @@ if &compatible
   set nocompatible
 endif
 
-let s:dein_dir = expand('~/.cache/.vim/dein')
-let s:dein_repo_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vim')
+if has('nvim')
+  let s:dein_dir = expand('~/.cache/.nvim/dein')
+  let s:dein_repo_dir = expand('~/.cache/.nvim/dein/repos/github.com/Shougo/dein.vim')
+else
+  let s:dein_dir = expand('~/.cache/.vim/dein')
+  let s:dein_repo_dir = expand('~/.cache/.vim/dein/repos/github.com/Shougo/dein.vim')
+end
+
 
 "let g:dein#types#git#default_protocol = "ssh"
 if &runtimepath !~# 'dein.vim'
@@ -15,19 +21,18 @@ endif
 
 " 設定開始
 if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
 
-  " プラグインリストを収めた TOML ファイル
-  " 予め TOML ファイル（後述）を用意しておく
-  let g:rc_dir    = expand('~/dotfiles/.vim/init')
-  let s:toml      = g:rc_dir . '/dein.toml'
-  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
+  let s:toml = [
+        \ { 'name': 'default' },
+        \ { 'name': 'lazy', 'lazy': 1 },
+        \ { 'name': 'denite_lazy', 'lazy': 1 },
+        \ ]
 
-  " TOML を読み込み、キャッシュしておく
-  call dein#load_toml(s:toml,      {'lazy': 0})
-  call dein#load_toml(s:lazy_toml, {'lazy': 1})
+  let s:path = {name -> $HOME . '/.vim/init/' . name . '.toml'}
+  let s:load_toml = {name, lazy -> dein#load_toml(s:path(name), {'lazy': lazy})}
 
-  " 設定終了
+  call dein#begin(s:dein_dir, map(deepcopy(s:toml), {_, t -> t['name']}))
+  call map(s:toml, {_, t -> s:load_toml(t['name'], get(t, 'lazy', 0))})
   call dein#end()
   call dein#save_state()
 endif

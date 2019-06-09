@@ -20,10 +20,11 @@ set autoindent
 set smartindent
 set hlsearch
 syntax enable
-colorscheme molokai
-highlight! Normal ctermbg=NONE guibg=NONE
-highlight! NonText ctermbg=NONE guibg=NONE
-highlight! LineNr ctermbg=NONE guibg=NONE
+set background=dark
+colorscheme material-theme
+" highlight! Normal ctermbg=NONE guibg=NONE
+" highlight! NonText ctermbg=NONE guibg=NONE
+" highlight! LineNr ctermbg=NONE guibg=NONE
 
 set ignorecase
 set smartcase
