@@ -48,3 +48,6 @@ repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'ujiprog/git-popup-messenger'
