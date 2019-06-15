@@ -35,6 +35,9 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'scrooloose/nerdtree' #ファイルツリー
 
 [[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+
+[[plugins]]
 repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]

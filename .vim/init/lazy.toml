@@ -6,7 +6,7 @@ repo = 'Shougo/deoplete.nvim' #補完
 depends = 'context_filetype.vim'
 on_event = "InsertEnter"
 hook_add = '''
-source ~/dotfiles/.vim/settings/deoplete.vim
+source ~/dotfiles/.vim/lazys/deoplete.vim
 '''
 
 [[plugins]]
@@ -23,7 +23,7 @@ repo = 'autozimu/LanguageClient-neovim'
 rev = 'next'
 build = 'bash install.sh'
 hook_add = '''
-source ~/dotfiles/.vim/settings/LanguageClient-neovim.vim
+source ~/dotfiles/.vim/lazys/LanguageClient-neovim.vim
 '''
 
 [[plugins]]
