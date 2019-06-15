@@ -3,6 +3,7 @@ let g:LanguageClient_serverCommands = {
             \ 'ruby': ['solargraph', 'stdio'],
             \ 'javascript': ['typescript-language-server'],
             \ 'vue': ['vls'],
+            \ 'go': ['gopls'],
             \ }
 
 augroup LanguageClient_config
