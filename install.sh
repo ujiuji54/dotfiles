@@ -7,3 +7,8 @@ sh ~/.cache/powerline_fonts/install.sh
 # mac
 brew install fzf
 brew install universal-ctags
+
+# lsp
+gem install solargraph
+npm install -g typescript typescript-language-server
+npm install -g vue-language-server
