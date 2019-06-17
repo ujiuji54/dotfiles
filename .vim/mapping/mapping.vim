@@ -1,5 +1,5 @@
 "nerdtree
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 "deoplete
 inoremap <expr><BS> deoplete#smart_close_popup()."<C-h>" " バックスペースで補完のポップアップを閉じる
