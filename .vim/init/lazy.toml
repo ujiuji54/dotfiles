@@ -1,10 +1,16 @@
 [[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
 repo = 'Shougo/deoplete.nvim' #補完
-on-i = 1
+depends = 'context_filetype.vim'
+on_event = "InsertEnter"
+hook_add = '''
+source ~/dotfiles/.vim/lazys/deoplete.vim
+'''
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
-on_ft = 'snippet'
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
@@ -13,7 +19,12 @@ on_event = 'InsertCharPre'
 on_ft = 'snippet'
 
 [[plugins]]
-repo = 'Shougo/context_filetype.vim'
+repo = 'autozimu/LanguageClient-neovim'
+rev = 'next'
+build = 'bash install.sh'
+hook_add = '''
+source ~/dotfiles/.vim/lazys/LanguageClient-neovim.vim
+'''
 
 [[plugins]]
 repo = 'Shougo/neomru.vim'
@@ -38,3 +49,10 @@ on_ft = ['slim']
 [[plugins]]
 repo = 'posva/vim-vue'
 on_ft = ['vue']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+hook_add = '''
+source ~/dotfiles/.vim/lazys/vim-go.vim
+'''
