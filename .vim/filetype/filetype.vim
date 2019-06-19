@@ -1,4 +1,4 @@
 augroup filetypedetect
-    au BufRead, BufNewFile *.rb *.erb setfiletype ruby
-    au BufRead, BufNewFile *.py setfiletype python
+  au BufRead, BufNewFile *.rb *.erb setf ruby
+  au BufNewFile,BufRead *.py,*.pyw,.pythonstartup,.pythonrc,*.ptl,.xonshrc  setf python
 augroup END
