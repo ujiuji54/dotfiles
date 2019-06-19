@@ -7,6 +7,8 @@ sh ~/.cache/powerline_fonts/install.sh
 # mac
 brew install fzf
 brew install universal-ctags
+brew install xonsh
+brew install bash-completion2
 
 # lsp
 gem install solargraph
