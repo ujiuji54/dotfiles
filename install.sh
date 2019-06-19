@@ -1,5 +1,6 @@
-mv ~/dotfiles/.bash_profile ~/.bash_profile
-mv ~/dotfiles/.bashrc ~/.bashrc
+cp ~/dotfiles/.bash_profile ~/.bash_profile
+cp ~/dotfiles/.bashrc ~/.bashrc
+cp ~/dotfiles/.xonshrc ~/.xonshrc
 
 git clone https://github.com/powerline/fonts.git ~/.cache/powerline_fonts --depth=1
 sh ~/.cache/powerline_fonts/install.sh
