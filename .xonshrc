@@ -1,4 +1,5 @@
 $PATH.append("/usr/local/bin")
+$BASH_COMPLETIONS.append('/Library/Developer/CommandLineTools/usr/share/git-core')
 $VI_MODE = True
 $XONSH_SHOW_TRACEBACK = True
 $SUGGEST_COMMANDS = True
@@ -21,6 +22,7 @@ aliases["p"] = "python3"
 
 # rails aliases
 aliases["ra"] = "bin/rails"
+aliases["rac"] = "bin/rails c"
 aliases["rar"] = "bin/rails routes"
 aliases["ram"] = "bin/rails db:migrate"
 aliases["rs"] = "bin/rspec"

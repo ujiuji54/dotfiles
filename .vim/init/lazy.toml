@@ -11,6 +11,7 @@ source ~/dotfiles/.vim/lazys/deoplete.vim
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+depends = 'deoplete.nvim'
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
@@ -48,6 +49,10 @@ on_ft = ['slim']
 
 [[plugins]]
 repo = 'posva/vim-vue'
+on_ft = ['vue']
+
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
 on_ft = ['vue']
 
 [[plugins]]
