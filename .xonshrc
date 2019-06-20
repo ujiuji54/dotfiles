@@ -1,5 +1,5 @@
 $PATH.append("/usr/local/bin")
-$BASH_COMPLETIONS.append('/Library/Developer/CommandLineTools/usr/share/git-core')
+$BASH_COMPLETIONS.append('/Library/Developer/CommandLineTools/usr/share/git-core/git-completion.bash')
 $VI_MODE = True
 $XONSH_SHOW_TRACEBACK = True
 $SUGGEST_COMMANDS = True
@@ -20,6 +20,12 @@ aliases["v"] = "nvim"
 aliases["vx"] = "nvim ~/.xonshrc"
 aliases["p"] = "python3"
 
+# git
+aliases['g'] = 'git'
+aliases['gs'] = 'git status -sb'
+aliases['gco'] = 'git checkout'
+aliases['gp'] = ['git', 'pull']
+
 # rails aliases
 aliases["ra"] = "bin/rails"
 aliases["rac"] = "bin/rails c"
@@ -28,5 +34,11 @@ aliases["ram"] = "bin/rails db:migrate"
 aliases["rs"] = "bin/rspec"
 
 # go aliases
-aliases["g"] = "go run"
-aliases["gb"] = "go build"
+# aliases["g"] = "go run"
+# aliases["gb"] = "go build"
+
+def _fd():
+    dir = $(find * -path '*/\.*' -prune \
+                  -o -type d -print 2> /dev/null | fzf +m)
+    print(dir)
+aliases["fd"] = _fd
