@@ -2,8 +2,8 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-#vim PATH
 export PATH="/usr/local/bin:$PATH"
+export GOPATH=$HOME/go
 
 #nodebrew PATH
 export PATH=/usr/local/var/nodebrew/current/bin:$PATH
