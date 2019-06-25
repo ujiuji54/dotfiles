@@ -5,6 +5,12 @@ set -U FZF_LEGACY_KEYBINDINGS 0
 set -x PATH /usr/local/var/nodebrew/current/bin $PATH
 set -x PATH ~/.nodebrew/current/bin $PATH
 
+#rbenv
+#if which rbenv > /dev/null; then eval "(rbenv init -)"; fi
+set -x PATH $HOME/.rbenv/bin $PATH
+set -x PATH $HOME/.rbenv/shims $PATH
+#eval "(rbenv init -)"
+
 alias v="env nvim"
 alias vf="env nvim ~/.config/fish/config.fish"
 
@@ -27,7 +33,8 @@ alias gc='env git commit -m'
 
 # rails
 alias ra="env bin/rails"
+alias ras="env bin/rails s"
 alias rac="env bin/rails c"
 alias rar="env bin/rails routes"
 alias ram="env bin/rails db:migrate"
-alias ras="env bin/rspec"
+alias rasp="env bin/rspec"
