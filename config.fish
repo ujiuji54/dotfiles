@@ -6,10 +6,16 @@ set -x PATH /usr/local/var/nodebrew/current/bin $PATH
 set -x PATH ~/.nodebrew/current/bin $PATH
 
 #rbenv
-#if which rbenv > /dev/null; then eval "(rbenv init -)"; fi
 set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
-#eval "(rbenv init -)"
+status --is-interactive; and source (rbenv init -|psub)
+set -l NEWPATH
+for p in $PATH
+  if not contains $NEWPATH $p
+    set NEWPATH $NEWPATH $p
+  end
+end
+set PATH $NEWPATH
 
 alias v="env nvim"
 alias vf="env nvim ~/.config/fish/config.fish"
