@@ -1,13 +1,19 @@
 [[plugins]]
+repo = 'roxma/nvim-yarp'
+if = ''' ! has('nvim')'''
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+if = ''' ! has('nvim')'''
+
+[[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim' #補完
 depends = 'context_filetype.vim'
 on_event = "InsertEnter"
-hook_add = '''
-source ~/dotfiles/.vim/lazys/deoplete.vim
-'''
+on_source = ['~/dotfiles/.vim/lazys/deoplete.vim']
 
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
@@ -23,9 +29,7 @@ on_ft = 'snippet'
 repo = 'autozimu/LanguageClient-neovim'
 rev = 'next'
 build = 'bash install.sh'
-hook_add = '''
-source ~/dotfiles/.vim/lazys/LanguageClient-neovim.vim
-'''
+on_source = ['~/dotfiles/.vim/lazys/LanguageClient-neovim.vim']
 
 [[plugins]]
 repo = 'Shougo/neomru.vim'
@@ -58,6 +62,4 @@ on_ft = ['vue']
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = ['go']
-hook_add = '''
-source ~/dotfiles/.vim/lazys/vim-go.vim
-'''
+on_source = ['~/dotfiles/.vim/lazys/vim-go.vim']
