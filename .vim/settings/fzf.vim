@@ -1,3 +1,6 @@
+let g:fzf_action = {
+  \ 'ctrl-s': 'split' }
+
 nnoremap <C-p> :FZFFileList<CR>
 command! FZFFileList call fzf#run(fzf#wrap({
             \ 'source': 'find . -type d -name .git -prune -o ! -name .DS_Store',
