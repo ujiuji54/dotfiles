@@ -5,6 +5,9 @@ set -U FZF_LEGACY_KEYBINDINGS 0
 set -x PATH /usr/local/var/nodebrew/current/bin $PATH
 set -x PATH ~/.nodebrew/current/bin $PATH
 
+# GOPATH
+set -x GOPATH $HOME/go $GOPATH
+
 #rbenv
 set -x PATH $HOME/.rbenv/bin $PATH
 set -x PATH $HOME/.rbenv/shims $PATH
