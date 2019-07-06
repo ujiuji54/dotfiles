@@ -7,6 +7,7 @@ set -x PATH ~/.nodebrew/current/bin $PATH
 
 # GOPATH
 set -x GOPATH $HOME/go $GOPATH
+set -x PATH $HOME/go/bin $PATH
 
 #rbenv
 set -x PATH $HOME/.rbenv/bin $PATH

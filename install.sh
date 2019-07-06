@@ -13,3 +13,6 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 gem install solargraph
 npm install -g typescript typescript-language-server
 npm install -g vue-language-server
+
+# go
+go get github.com/skanehira/translate.vim

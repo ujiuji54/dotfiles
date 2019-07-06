@@ -57,4 +57,7 @@ build = './install --all'
 repo = 'junegunn/fzf.vim'
 
 [[plugins]]
+repo = 'skanehira/translate.vim'
+
+[[plugins]]
 repo = 'ujiprog/git-popup-messenger'
