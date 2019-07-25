@@ -60,4 +60,4 @@ repo = 'junegunn/fzf.vim'
 repo = 'skanehira/translate.vim'
 
 [[plugins]]
-repo = 'ujiprog/git-popup-messenger'
+repo = 'skanehira/docker.vim'

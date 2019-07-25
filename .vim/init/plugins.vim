@@ -19,6 +19,8 @@ if &runtimepath !~# 'dein.vim'
   execute 'set runtimepath^=' . s:dein_repo_dir
 endif
 
+let g:dein#auto_recache = 1
+
 " 設定開始
 if dein#load_state(s:dein_dir)
 

@@ -10,6 +10,9 @@ if = ''' ! has('nvim')'''
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
+repo = 'mattn/sonictemplate-vim'
+
+[[plugins]]
 repo = 'Shougo/deoplete.nvim' #補完
 depends = 'context_filetype.vim'
 on_event = "InsertEnter"
