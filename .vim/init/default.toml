@@ -61,3 +61,6 @@ repo = 'skanehira/translate.vim'
 
 [[plugins]]
 repo = 'skanehira/docker.vim'
+
+[[plugins]]
+repo = 'arcticicestudio/nord-vim'

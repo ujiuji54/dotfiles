@@ -21,11 +21,7 @@ set smartindent
 set hidden
 set hlsearch
 syntax enable
-set background=dark
-colorscheme material-theme
-" highlight! Normal ctermbg=NONE guibg=NONE
-" highlight! NonText ctermbg=NONE guibg=NONE
-" highlight! LineNr ctermbg=NONE guibg=NONE
+colorscheme nord
 
 set ignorecase
 set smartcase
