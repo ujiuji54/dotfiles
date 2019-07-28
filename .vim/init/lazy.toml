@@ -13,32 +13,6 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'mattn/sonictemplate-vim'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim' #補完
-depends = 'context_filetype.vim'
-on_event = "InsertEnter"
-hook_add = '''
-source ~/dotfiles/.vim/lazys/deoplete.vim
-'''
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-depends = 'deoplete.nvim'
-
-[[plugins]]
-repo = 'Shougo/neosnippet.vim'
-depends = ['context_filetype.vim', 'neosnippet-snippets']
-on_event = 'InsertCharPre'
-on_ft = 'snippet'
-
-[[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-rev = 'next'
-build = 'bash install.sh'
-hook_add = '''
-source ~/dotfiles/.vim/lazys/LanguageClient-neovim.vim
-'''
-
-[[plugins]]
 repo = 'Shougo/neomru.vim'
 on_path = '.*'
 

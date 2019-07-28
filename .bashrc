@@ -4,3 +4,5 @@ alias python=python3
 alias vim=nvim
 alias x=xonsh
 alias f=fish
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
