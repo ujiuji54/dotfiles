@@ -30,6 +30,7 @@ alias l="env ls -ltr"
 alias la="env ls -a"
 alias ll="env ls -l"
 alias p="env python3"
+alias pip="env pip3"
 
 # git
 alias g='env git'
@@ -40,6 +41,11 @@ alias gd='env git diff'
 alias gl='env git log --graph --date=short --pretty=\"format:%C(yellow)%h %C(cyan)%ad %C(green)%an%Creset%x09%s %C(red)%d%Creset\"'
 alias ga='env git add'
 alias gc='env git commit -m'
+
+# docker
+alias dk="env docker"
+alias dc="env docker-compose"
+alias dcp="env docker-compose ps"
 
 # rails
 alias ra="env bin/rails"

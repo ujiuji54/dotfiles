@@ -1,3 +1,5 @@
+autocmd VimEnter * call coc#rpc#start_server()
+
 let g:coc_global_extensions = ['coc-json']
 let g:coc_global_extensions = ['coc-solargraph']
 let g:coc_global_extensions = ['coc-python']

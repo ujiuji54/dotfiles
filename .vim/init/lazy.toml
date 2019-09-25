@@ -40,6 +40,10 @@ source ~/dotfiles/.vim/lazys/vue.vim
 '''
 
 [[plugins]]
+repo = 'elmcast/elm-vim'
+on_ft = ['elm']
+
+[[plugins]]
 repo = 'digitaltoad/vim-pug'
 on_ft = ['vue']
 

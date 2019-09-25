@@ -7,6 +7,7 @@ command! FZFFileList call fzf#run(fzf#wrap({
             \ 'down': '40%'}))
 
 nnoremap <C-b> :Buffers<CR>
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
 nnoremap <C-g> :Ag<CR>
 nnoremap <silent> <C-]> :call fzf#vim#tags(expand('<cword>'))<CR>
 
