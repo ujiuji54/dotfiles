@@ -44,7 +44,7 @@ repo = 'airblade/vim-gitgutter'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'dense-analysis/ale'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
@@ -53,14 +53,14 @@ repo = 'Yggdroot/indentLine'
 repo = 'junegunn/fzf'
 build = './install --all'
 
+[[plugin]]
+repo = 'mattn/sonictemplate-vim'
+
 [[plugins]]
 repo = 'junegunn/fzf.vim'
 
-[[plugins]]
-repo = 'skanehira/translate.vim'
-
-[[plugins]]
-repo = 'skanehira/docker.vim'
+# [[plugins]]
+# repo = 'skanehira/docker.vim'
 
 [[plugins]]
 repo = 'arcticicestudio/nord-vim'

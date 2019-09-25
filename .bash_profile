@@ -3,19 +3,22 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export PATH="/usr/local/bin:$PATH"
-export GOPATH=$HOME/go
 
-#nodebrew PATH
+# go
+export GOPATH=$HOME/go
+export GO111MODULE=on
+
+# nodebrew PATH
 export PATH=/usr/local/var/nodebrew/current/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-#rbenv
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 
-#java
+# java
 export PATH=$PATH:/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home/bin
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home
 
